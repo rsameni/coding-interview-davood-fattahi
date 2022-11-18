@@ -38,3 +38,22 @@ for i=1:NumCases
 end
 
 %% 5b. 
+function hr = inst_hr(peaks,fs)
+hr = 60.*fs./(peaks(2:end)-peaks(1:end-1));
+end
+% 
+% function HR = smooth_hr(peaks, fs)
+% hr = inst_hr(peaks,fs);
+% 
+% HR=zeros
+% 
+
+
+
+
+
+
+
+
+
+
